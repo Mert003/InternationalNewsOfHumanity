@@ -1,0 +1,15 @@
+#OneCard{
+    display: flex;
+  flex-direction: row;
+  border: none;
+  font-size: x-large;
+  height: 400px;
+  width: 100%;
+}
+#OneCardImg{
+    width: 60%;
+}
+
+#OneCard p{
+    margin-top: 20px;
+}

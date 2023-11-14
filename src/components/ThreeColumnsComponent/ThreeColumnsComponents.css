@@ -1,0 +1,56 @@
+.ThreeComponentcontainer{
+    width: 100%;
+    height: 600px;
+    
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.TCCfirstcolumn{
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+.TCcolumns{
+    display: flex;
+    flex-direction: column;
+   
+    height: 20%;
+    justify-content: center;
+    border-bottom: 1px solid #d2d2d2;
+}/*
+.TCcolumns:nth-child(2n){
+    background-color: #d2d2d2;
+}*/
+.TCCsecondcolumn{
+    position: relative;
+    width: 48%;
+    height: 100%;
+
+}
+.TCCsecondcolumn img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: 0;
+}
+.TCCsecondcolumntexts{
+ position: absolute;
+ bottom: 0;
+ z-index: +2;
+ color: #d2d2d2;
+}
+.TCCthirdcolumn{
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}

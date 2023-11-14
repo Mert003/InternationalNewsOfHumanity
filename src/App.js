@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './Pages/Home/Home.js';
+import Newsnav from "./components/navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import BusinessNewsPage from "./Pages/BusinessPage/BusinessNewsPage";
+import HealthNewsPage from "./Pages/HealthPage/HealthNewsPage";
+import GeneralNewsPage from "./Pages/GeneralPage/GeneralNewsPage";
+import SportNewsPage from "./Pages/SportPage/SportNewsPage";
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <Newsnav />
+
+   <Routes>
+    
+    <Route path="/" element={<Home />} />
+    <Route path='/Business' element={<BusinessNewsPage />} />
+    <Route path='/Health' element={<HealthNewsPage />} />
+    <Route path='/General' element={<GeneralNewsPage />} />
+    <Route path='/Sport' element={<SportNewsPage />} />
+    
+   </Routes>
+
+   <Footer />
+   
     </div>
   );
 }
 
-export default App;

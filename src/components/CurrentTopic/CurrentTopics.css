@@ -1,0 +1,38 @@
+
+.card {
+
+    height: 100%;
+    position: relative;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+  .carousel-item {
+    height: 750px; 
+    overflow: hidden;
+  }
+  
+  .carousel-item img {
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* scale image to fit within container */
+  }
+  @media screen and (max-width: 991px) { /* adjust height for screens smaller than 768px */
+    .carousel-item {
+      height: 450px;
+    }}
+  .card-img-top {
+    
+    object-fit: cover;
+  }
+  
+  .card-body {
+    flex-grow: 1;
+  }
+.carousel-caption{
+  background-color: #222222ae;
+
+}

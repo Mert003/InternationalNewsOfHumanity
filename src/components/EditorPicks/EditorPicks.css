@@ -1,0 +1,122 @@
+.EPContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 50px;
+}
+.EPLeftSection{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    position: relative;
+}
+.EP-image{
+    width: 100%;
+    height: 100%;
+    top: 0 ;
+    left: 0;
+    position: absolute;
+
+}
+.EPLeftSection > .EP-content{
+    position: absolute;
+   z-index: +3;
+   bottom: 0px;
+   color: #ffffff;
+   background-color: rgba(0,0,0,0.5);
+   
+}
+.EPLeftSection > .EP-content > .EP-description,.EP-title{
+    margin-bottom: 10px;
+   width: 80%;
+   text-align: center;
+   margin: 0 auto 10px;
+}
+.EPRightSection{
+    width: 35%;
+    align-items: center;
+    text-align: center;
+}
+.EPheader{
+    background-color: red;
+    color: #ffffff;
+    
+    height:10% ;
+    text-align: left;
+    display: table;
+    width: 100%;
+    padding-left: 20px;
+    
+}
+.EPheader > h2{
+    display: table-cell;
+    vertical-align: middle;
+   
+}
+
+.EPRightSection > ul {
+    display: flex;
+    flex-direction: column;
+   
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.EPRightSection>ul>li{
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+    height: 18%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+   
+    padding: 10px;
+    color: #d2d2d2;
+   
+}
+.EPRightSection>ul>li:nth-child(2n){
+    background-color: rgb(85, 85, 85);
+}
+.EPRightSection>ul>li:nth-child(2n+1){
+    background-color: rgb(128, 128, 128);
+}
+.EPRightSection>ul>li>svg{
+   width: 10%;
+   font-size: 40px;
+    float: left;
+
+  margin: 0;
+   
+   color: coral;
+   
+}
+.EPRightSection>ul>li>h3{
+    width: 80%;
+   
+    
+ }
+
+
+ @media screen and (max-width:998px) {
+    .EPContainer{
+        flex-direction: column;
+        justify-content: center;
+        height: 160vh;
+    }
+    .EPLeftSection{
+        width: 90%;
+        height: 50%;
+        margin: 10px auto;
+    }
+    .EPRightSection{
+        width: 90%;
+        height: 50%;
+        
+        margin: 10px auto;
+    }
+ }
