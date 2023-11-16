@@ -46,6 +46,7 @@
  bottom: 0;
  z-index: +2;
  color: #d2d2d2;
+ background-color: rgba(0, 0, 0, 0.5 );
 }
 .TCCthirdcolumn{
     width: 25%;

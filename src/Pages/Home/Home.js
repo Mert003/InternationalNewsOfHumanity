@@ -23,6 +23,7 @@ export default function Home() {
 
       <OneCard topic="general" />
 
+      <h2 style={{textDecoration:"Underline"}}>Science News</h2>
       <ThreeColumnsComponents topic="science" />
       
       </div>
