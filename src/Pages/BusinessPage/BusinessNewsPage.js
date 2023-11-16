@@ -14,6 +14,7 @@ const Business = () => {
    <Triple category="business" />
    <EditorPicks topic="business" />
    <OneCard topic="retirement" />
+   
     <ThreeColumnsComponents topic="work" />
    </>
   );
