@@ -4,10 +4,13 @@ import axios from "axios";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./Triple.css";
 
+import fetchData from "../../utils/api";
+
 
 function Triple(props) {
   const [news, setNews] = useState([]);
-  useEffect(() => {
+
+/*   useEffect(() => {
     axios
     .get(
       `https://newsapi.org/v2/everything?q=${props.category}&language=en&sortBy=popularity&apiKey=11bc37735ba94370b95485b14ac159b3`
@@ -20,6 +23,18 @@ function Triple(props) {
     .catch((error) => {
       console.log(error);
     });
+  }, []); */
+
+  useEffect(() => {
+    const fetchNewsData = async () => {
+      try {
+        const data = await fetchData(`https://newsapi.org/v2/everything?q=${props.category}&language=en&sortBy=popularity&apiKey=11bc37735ba94370b95485b14ac159b3`); // Pass the specific endpoint
+        setNews(data.articles);
+      } catch (error) {
+        // Handle errors
+      }
+    };
+    fetchNewsData();
   }, []);
 
   return (
