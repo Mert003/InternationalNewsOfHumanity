@@ -11,21 +11,21 @@ export default function Home() {
       <div>
         
       <CurrentTopics />
-      
+    {/*   
       <h2 className='TripleHeader'>Conflicts</h2>
       <Triple category="Conflict"/>
       <h2 className='TripleHeader'>Popular News</h2>
       <Triple category="popular" />
       <h2 className='TripleHeader'>Climate Change</h2>
       <Triple category="climate" />
+ */}
+     {/*  <EditorPicks topic="money"/> */}
 
-      <EditorPicks topic="money"/>
+    {/*   <OneCard topic="general" /> */}
 
-      <OneCard topic="general" />
-
-      <h2 style={{textDecoration:"Underline",fontWeight:"bold"}}>Science News</h2>
+     {/*  <h2 style={{textDecoration:"Underline",fontWeight:"bold"}}>Science News</h2>
       <ThreeColumnsComponents topic="science" />
-      
+       */}
       </div>
     );
   }

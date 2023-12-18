@@ -3,11 +3,12 @@ import axios from "axios";
 import { Container, Card, Carousel } from "react-bootstrap";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./CurrentTopics.css";
+import fetchData from "../../utils/api";
 
 function BusinessCarousel() {
   const [articles, setArticles] = useState([]);
 
-  useEffect(() => {
+/*   useEffect(() => {
     // Make API request to NewsAPI to get the list of business news articles
     axios
       .get(
@@ -19,6 +20,18 @@ function BusinessCarousel() {
       .catch((error) => {
         console.log(error);
       });
+  }, []); */
+
+  useEffect(() => {
+    const fetchNewsData = async () => {
+      try {
+        const data = await fetchData( `https://newsapi.org/v2/top-headlines?country=us&category=general&sortBy=relevancy&apiKey=11bc37735ba94370b95485b14ac159b3`); // Pass the specific endpoint
+        setArticles(data.articles);
+      } catch (error) {
+        // Handle errors
+      }
+    };
+    fetchNewsData();
   }, []);
 
 
