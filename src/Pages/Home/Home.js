@@ -12,7 +12,7 @@ export default function Home() {
         
       <CurrentTopics />
       
-      <h2 className='TripleHeader'>Conflicts</h2>
+      <h2 className='TripleHeader'>Conflict</h2>
       <Triple category="Conflict"/>
       <h2 className='TripleHeader'>Popular News</h2>
       <Triple category="popular" />
